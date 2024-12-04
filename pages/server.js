@@ -3,7 +3,7 @@ import { conexion } from "./db.js";
 import { fileURLToPath } from "url";
 import path from "path";
 import expressSession from 'express-session';
-
+//mysql://root:nszffScELAWUqgiAxuibrSZhjxHaMGZr@junction.proxy.rlwy.net:12004/railway
 // Configuración de Express
 const app = express();
 const port = 4000;
