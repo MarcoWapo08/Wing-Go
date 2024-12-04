@@ -1,0 +1,748 @@
+body {
+    margin: 0%;
+    border: 0%;
+    background-image: url(../images/background.avif);
+    background-position: center;
+    background-size: cover;
+    animation: introbackground 0.5s ease forwards;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    z-index: 9000;
+}
+
+#header1 {
+    width: 30%;
+    margin: 0%;
+}
+
+.profile-image {
+    position: absolute;
+    width: 200px;
+    transform: translate(10%, -5%);
+    z-index: 10;
+    transition: transform 0.15s ease;
+    animation: intrologo 1s ease-out;
+}
+
+.profile-image:hover {
+    transform: translate(10%, 0%);
+}
+
+.profile-image:active {
+    transform: translate(10%, -5%);
+}
+
+#header2 {
+    width: 70%;
+    margin: 0;
+    justify-content: center;
+}
+
+.boton-header {
+    transition: transform 0.3s ease;
+    animation: introbotonesheader 0.5s ease-in-out;
+}
+
+.boton-header:hover {
+    transform: scale(1.05);
+}
+
+.boton-header:active {
+    transform: scale(0.9);
+}
+
+.boton-header2 {
+    transition: transform 0.3s ease;
+    animation: introbotonesheader 1s ease-out;
+}
+
+.boton-header2:hover {
+    transform: scale(1.05);
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+}
+
+.margin-menu {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.fb {
+    width: 5vh;
+    height: 5vh;
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.2s ease;
+    animation: introfb 1s ease-out;
+}
+
+.fb:hover {
+    transform: scale(1.2);
+}
+
+.fb:active {
+    transform: scale(0.9);
+}
+
+#containerxd {
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+#container1 {
+    display: flex;
+    width: 100%;
+}
+
+#container11 {
+    width: 70%;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-right: 2vh;
+    transition: transform 0.3s ease;
+    animation: introcontenedor11 1s ease-out;
+}
+
+#container11:hover {
+    transform: scale(1.03);
+}
+
+.slide img {
+    height: 80vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+}
+
+#container12{
+    width: 30%;
+    margin-top: 3vh;
+    margin-left: 2vh;
+    margin-right: 3vh;
+    height: 80vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+    background-color: #3a3937;
+    transition: transform 0.3s ease;
+    animation: introcontenedor12 1s ease-out;
+}
+
+#container12:hover {
+    transform: scale(1.03);
+}
+
+.container12 {
+    padding: 5%;
+}
+
+.boton {
+    display: flex;
+    width: 85%;
+    height: 7em;
+    background-image: url(../images/boton.png);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton2 {
+    display: flex;
+    width: 85%;
+    height: 7em;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton2:default {
+    display: flex;
+    width: 85%;
+    height: 7em;
+    background-image: url(../images/boton.png);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:active, .boton2:active {
+    display: flex;
+    width: 85%;
+    height: 7em;
+    background-image: url(../images/botonPress.png);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisorcontainer12 {
+    width: 100%;
+    height: 1vh;
+    background-color: #ffc50e;
+}
+
+#container2 {
+    display: flex;
+    width: 100%;
+}
+
+#container21 {
+    width: 33%;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-right: 1vh;
+    height: 40vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+    background-color: #3a3937;
+    transition: transform 0.3s ease;
+    animation: introcontenedor2 1s ease-out;
+}
+
+#container21:hover {
+    transform: scale(1.05);
+}
+
+.container21 {
+    padding: 5%;
+}
+
+#container22 {
+    width: 33%;
+    margin-top: 3vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    height: 40vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+    background-image: url(../images/horario.png);
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: transform 0.3s ease;
+    animation: introcontenedor2 1s ease-out;
+}
+
+#container22:hover {
+    transform: scale(1.05);
+}
+
+#container23 {
+    width: 33%;
+    margin-top: 3vh;
+    margin-left: 1vh;
+    margin-right: 3vh;
+    height: 40vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+    background-image: url(../images/nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    animation: introcontenedor2 1s ease-out;
+}
+
+#container23:hover {
+    transform: scale(1.05);
+}
+
+#containermenu {
+    height: 100%;
+    width: 80%; 
+    margin-top: 3.5vh;
+    margin-bottom: 1vh;
+    transition: transform 0.3s ease;
+    animation: intromenu 1s ease-out;
+}
+
+#containermenu:hover {
+    transform: scale(1.02);
+}
+
+#containerubicacion1 {
+    background-color: #3a3937;
+    align-content: center;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+    width: 600px;
+    height:450px;
+    margin-right: 3%;
+    transition: transform 0.3s ease; 
+    animation: introubicacion1 1s ease-out;
+}
+
+#containerubicacion2 {
+    transition: transform 0.3s ease; 
+    animation: introubicacion2 1s ease-out;
+}
+
+#containerubicacion1:hover, #containerubicacion2:hover{
+    transform: scale(1.04);
+}
+
+.containerpedir {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 5%;
+    border-color: #ffc50e;
+    background-color: #3a3937;
+    animation: intropedir 1s ease-out;
+}
+
+#containertarjetas1{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#containertarjetas2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.tarjeta {
+    height: 35vh;
+    width: 100%;
+    border-radius: 5%;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+    transition: transform 0.3s ease;
+    animation: introtarjetaspedir 1s ease-out;
+    
+}
+  
+.tarjeta:hover {
+    transform: scale(1.04);
+}
+
+.textoTarjeta{
+    color: #fff;
+    padding: .5rem;
+    border-radius: 5%;
+    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+    animation: introtarjetaspedir 1s ease-out;
+}
+
+.textoTarjeta p{
+    color: #f2f2f2;
+}
+  
+.espacio {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.precio {
+    font-size: 1rem;
+    font-family: cooperFive;
+}
+  
+.botonCompra {
+    background-color:#FFC300;
+    padding: .25rem 1rem;
+    border-radius: 4px;
+    font-family: cooperFive;
+    color: #ff0000;
+    transition: transform 0.1s ease;
+}
+
+.botonCompra:hover {
+    transform: scale(1.04);
+}
+
+.botonCompra:active {
+    transform: scale(0.8);
+}
+
+.botonCompra a:visited{
+    color: #ff0000;
+}
+
+.containercarritos, .containerpedidos, .containerhistoriales {
+    justify-content:flex-start;
+    width: 90%;
+    margin: 1em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 15px;
+    border-color: #ffc50e;
+    background-color: #3a3937;
+    animation: intropedir 1s ease-out;
+}
+
+.containercarrito, .containerpedido, .containerhistorial {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 20px;
+    background-color: white;
+    animation: intropedir 1s ease-out;
+}
+
+.containercosaspedido1, .containercosascarrito1, .containercosashistorial1 {
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: white;
+    animation: intropedir 1s ease-out;
+}
+
+.containercosaspedido2, .containercosascarrito2, .containercosashistorial2 {
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: white;
+    animation: intropedir 1s ease-out;
+}
+
+.containercosaspedido3, .containercosascarrito3, .containercosashistorial3 {
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: white;
+    animation: intropedir 1s ease-out;
+}
+
+.containercarritopedidos, .containerpedidopedidos, .containerhistorialpedidos {
+    padding: .5rem;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+    animation: introtarjetaspedir 1s ease-out;
+}
+
+.fotoPedido, .fotoCarrito, .fotoHistorial {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.botonMoverPedidos, .botonCancelarPedido, .botonCompletarCarrito, .botonCancelarCarrito, .botonEliminarHistorial {
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: cooperFive;
+    transition: transform 0.1s ease;
+    animation: intromodal 1s ease-out;
+    margin-top: auto;  /* Empuja el botón al fondo del contenedor */
+}
+
+
+
+.botonCancelarPedido:hover, .botonCompletarCarrito:hover, .botonCancelarCarrito:hover, .botonEliminarHistorial:hover {
+    transform: scale(1.04);
+}
+
+.botonCancelarPedido:active, .botonCompletarCarrito:active, .botonCancelarCarrito:active, .botonEliminarHistorial:active {
+    transform: scale(0.8);
+}
+  
+
+@font-face {
+    font-family: 'cooperFive';
+    src: url('../downloadedFonts/CooperFiveOpti-Black.otf')
+}
+.cooperFive {
+    font-family: 'cooperFive';
+}
+
+.text3 {
+    -webkit-text-stroke: 3px black;
+}
+
+.text2 {
+    -webkit-text-stroke: 2px black;
+}
+
+.text1 {
+    -webkit-text-stroke: 1px black;
+}
+
+.input {
+    --bulma-input-h: 360;
+    --bulma-input-focus-h: 52deg;
+}
+
+@keyframes introbackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+.animacionbotonesheader {
+    animation: introbotonesheader 1s ease-in-out;
+}
+
+@keyframes introbotonesheader {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #ff0000;
+    }
+}
+
+@keyframes intrologo {
+    0% {
+        opacity: 0;
+        transform: scale(50%);
+        transform: translate(-5%, -5%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+        transform: translate(10%, -5%);
+    }
+}
+
+@keyframes introfb {
+    0% {
+        opacity: 0;
+        transform: translateX(+80%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes introcontenedor11 {
+    0% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes introcontenedor12 {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.animacionbotonnespedir {
+    animation: introbotonespedir 1s ease-out;
+}
+
+@keyframes introbotonespedir {
+    0% {
+        opacity: 0;
+        transform: scale(80%)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+.animacioninput {
+    animation: introinput 1s ease-out;
+}
+
+@keyframes introinput {
+    0% {
+        opacity: 0;
+        transform: scale(90%)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+@keyframes introcontenedor2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes intromenu {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes intropedir {
+    0% {
+        opacity: 0;
+        transform: translateX(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes introtarjetaspedir {
+    0% {
+        opacity: 0;
+        transform: scale(90%)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100%)
+    }
+}
+
+@keyframes introubicacion1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes introubicacion2 {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* Boton Carrito */
+
+:root {
+    --btn-cart-start-scale: 0;
+    --btn-cart-start-opacity: 0;
+  }
+  
+  .btn-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: transparent;
+      position: relative;
+      transition: 0.3s ease;
+      animation: showBtnCart 1s ease-out forwards; /* Animación de entrada */
+      transform: scale(var(--btn-cart-start-scale));
+      opacity: var(--btn-cart-start-opacity);
+  }
+  
+  @keyframes showBtnCart {
+      0% {
+          transform: scale(1);
+          opacity: 0;
+      }
+      100% {
+          transform: scale(1);
+          opacity: 1;
+      }
+  }
+  
+  .btn-cart::after {
+      content: attr(data-quantity);
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      font-size: 15px;
+      color: red;
+      font-family: 'cooperFive', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s linear;
+      top: 115%;
+  }
+  
+  .icon-cart {
+      width: 24.38px;
+      height: 30.52px;
+      transition: .2s linear;
+  }
+  
+  .icon-cart path {
+      fill: red;
+      transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+      transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+      fill: red;
+  }
+  
+  .btn-cart:hover::after {
+      visibility: visible;
+      opacity: 1;
+      top: 35%;
+  }
+  
+  .quantity {
+      display: none;
+  }
+  

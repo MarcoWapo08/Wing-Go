@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modals.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de Navegacion -->
+        <nav class="navbar" role="navigation" aria-label="main navigation" style="height: 5em; background-color: black;">
+            <div class="navbar-menu">
+                <!-- Inicio del Header1 -->
+                 <!-- Boton del Logo -->
+                <div id="header1">
+                    <button id="botonNavLogo"><img src="../images/logo-transparente.png" class="profile-image animacionlogo" alt="Imagen"></button>                   
+                </div>
+                <!-- Inicio del Header2 -->
+                <div id="header2" class="navbar-start">
+                    <!-- Boton Inicio -->
+                    <div id="botonNavInicio" class="boton-header navbar-item" style="color: #ff0000; margin-right: 1.5em; justify-content: center; font-size: 1.5em; font-family: cooperFive;">
+                        <button>Inicio</button>
+                    </div>
+                    <!-- Boton Menu -->
+                    <div id="botonNavMenu" class="boton-header navbar-item" style="color: #ff0000; margin-right: 1.5em; justify-content: center; font-size: 1.5em; font-family: cooperFive;">
+                        <button>Menú</button>
+                    </div>
+                    <!-- Boton Pedir -->
+                    <div id="botonNavPedir" class="boton-header navbar-item" style="color: #ff0000; margin-right: 1.5em; justify-content: center; font-size: 1.5em; font-family: cooperFive;">
+                        <button>Pedir</button>
+                    </div>
+                    <!-- Boton Ubicacion -->
+                    <div id="botonNavUbicacion" class="boton-header navbar-item" style="color: #ff0000; margin-right: 1.5em; justify-content: center; font-size: 1.5em; font-family: cooperFive;">
+                        <button>Ubicación</button>
+                    </div>
+                    <!-- Boton Contactanos (Desplegable) -->
+                    <div class="boton-header2 navbar-item has-dropdown is-hoverable" style="margin-right: 0.5em; margin-top: 0.3em; justify-content: center; font-size: 1.5em; font-family: cooperFive;">
+                        <div style="justify-content: center;">
+                            <button class="animacionbotonesheader navbar-link" style="color: #ff0000;">Contactanos</button>
+                        </div>
+                        <!-- Se despliega -->
+                        <div class="navbar-dropdown" style="margin-top: -4%;">
+                            <!-- Boton Telefono -->
+                            <div id="botonNavTelefono">
+                                <button class="navbar-item boton-header" style="font-size: 1em; font-family: cooperFive; color: #ff0000;">Telefono</button>
+                            </div>
+                            <!-- Boton Horario -->
+                            <div id="botonNavHorario">
+                                <button class="navbar-item boton-header" style="font-size: 1em; font-family: cooperFive; color: #ff0000;">Horario de Servicio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boton Carrito -->
+                <div class="navbar-end">
+                    <div class="navbar-item boton-header">
+                        <div style="display: flex; justify-content: right; padding-right: 0.5em;">
+                            <button id="botonNavCarrito" data-quantity="0" class="btn-cart">
+                                <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+                                    <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+                                </svg>
+                                <span class="quantity"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boton Facebook -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div style="display: flex; justify-content: right; padding-right: 1em;">
+                            <button id="botonNavFB" class="fb animacionfb"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Contenido -->
+    <div id="containerxd" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="containerpedir">
+            <div id="containertarjetas1" style="display: flex;"></div>
+            <div id="containertarjetas2" style="display: flex;"></div>
+        </div>
+    </div>
+
+    
+    <!-- Modals -->
+
+    <div id="modalCarga" class="modal">
+        <div style="display: flex; width: 50%; height: 50%; justify-content: center; align-items: center;">
+            <div class="newtons-cradle">
+                <div class="newtons-cradle__dot"></div>
+                <div class="newtons-cradle__dot"></div>
+                <div class="newtons-cradle__dot"></div>
+                <div class="newtons-cradle__dot"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modalContenidoPlatillo" class="modal">
+        <div id="modalAnuncioContenidoPlatillo" class="modalContenidoPlatillo" style="width: 40%; height: 85%;"></div>
+    </div>
+    <div id="modalCompraCompletadaConExito" class="modal">
+        <div class="modalcontenidosincuenta">
+            <p class="text2 animacionintromodal" style="font-family: cooperFive; color: #ff0000; font-size: 1.5em; margin-bottom: 1em;">Compra Completada Con Exito</p>
+            <button id="modalCompraCompletadaConExitocerrar" class="modalsincuentabotoncerrar">Cerrar</button>
+        </div>
+    </div>
+    <div id="modalCompraNoCompletada" class="modal">
+        <div class="modalcontenidosincuenta">
+            <p class="text2 animacionintromodal" style="font-family: cooperFive; color: #ff0000; font-size: 1.5em; margin-bottom: 1em;">Compra No Completada</p>
+            <button id="modalCompraNoCompletadacerrar" class="modalsincuentabotoncerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="modalAgregadoCarritoCompletado" class="modal">
+        <div class="modalcontenidosincuenta">
+            <p class="text2 animacionintromodal" style="font-family: cooperFive; color: #ff0000; font-size: 1.5em; margin-bottom: 1em;">Agregado al Carrito Con Exito</p>
+            <button id="modalAgregadoCarritoCompletadocerrar" class="modalsincuentabotoncerrar">Cerrar</button>
+        </div>
+    </div>
+    
+    <div id="modalAgregadoCarritoNoCompletado" class="modal">
+        <div class="modalcontenidosincuenta">
+            <p class="text2 animacionintromodal" style="font-family: cooperFive; color: #ff0000; font-size: 1.5em; margin-bottom: 1em;">No se pudo Agregar al Carrito</p>
+            <button id="modalAgregadoCarritoNoCompletadocerrar" class="modalsincuentabotoncerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="pedir.js"></script>
+    <script src="general.js"></script>
+</body>
+</html>

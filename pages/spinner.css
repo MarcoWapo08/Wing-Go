@@ -1,0 +1,56 @@
+.spinner {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: cooperFive;
+    color: black;
+  }
+  
+  .number-input {
+    width: 60px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: cooperFive;
+    color: black;
+  }
+  
+  .buttonSpinner {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .buttonSpinner:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .buttonSpinner:active {
+    background-color: #d0d0d0;
+  }
+  
+  .buttonSpinner:disabled {
+    background-color: #f9f9f9;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* Para navegadores WebKit (Chrome, Safari, Edge, Opera) */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    input[type="number"] {
+        appearance: none; /* Propiedad estándar, compatible en algunos navegadores */
+        border: 1px solid white;
+        padding: 5px;
+        font-size: 16px;
+        
+    }
