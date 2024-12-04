@@ -1,9 +1,10 @@
 import mysql from "mysql2/promise"
 // Datos para conectarnos a la base de datos
 export const conexion = mysql.createPool({
-    host: "junction.proxy.rlwy.net",
+    host: "autorack.proxy.rlwy.net",
     user: "root",
-    password: "nszffScELAWUqgiAxuibrSZhjxHaMGZr",
+    password: "rpDvkoPXVmmfJPCHgprcXudaEVtblhlp",
     database: "railway",
-    port: 12004
+    port: 40007
+
 })
