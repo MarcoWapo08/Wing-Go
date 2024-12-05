@@ -4,7 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon pages/server.js"
+    "dev": "nodemon pages/server.js",
+    "start": "node pages/server.js"
   },
   "author": "",
   "license": "ISC",
